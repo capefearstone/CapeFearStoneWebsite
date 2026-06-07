@@ -392,6 +392,10 @@ a {
 
 .portrait-image {
   aspect-ratio: 1;
+  border-radius: 0;
+  box-shadow: none;
+  object-fit: contain;
+  padding: 0;
 }
 
 .section-heading {
