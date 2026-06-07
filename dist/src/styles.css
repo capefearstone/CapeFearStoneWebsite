@@ -34,6 +34,7 @@ h4,
 h5,
 h6,
 .brand-name {
+  color: var(--green-dark);
   font-family: "Noto Serif", Georgia, serif;
   font-weight: 700;
 }
@@ -112,13 +113,14 @@ a {
 }
 
 .site-nav .nav-cta {
-  background: var(--charcoal);
-  color: var(--white);
+  background: transparent;
+  color: #3d423e;
 }
 
 .site-nav .nav-cta:hover,
 .site-nav .nav-cta[aria-current] {
   background: var(--green-dark);
+  color: var(--white);
 }
 
 .hero {
@@ -127,7 +129,7 @@ a {
   display: grid;
   align-items: center;
   overflow: hidden;
-  background: var(--charcoal);
+  background: var(--stone-light);
 }
 
 .hero-image {
@@ -142,9 +144,7 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(90deg, rgb(24 59 43 / 84%), rgb(32 36 33 / 28)),
-    linear-gradient(0deg, rgb(32 36 33 / 54%), transparent 42%);
+  background: linear-gradient(180deg, rgb(245 241 234 / 88%), rgb(232 223 208 / 76%));
 }
 
 .hero-overlay {
@@ -184,7 +184,7 @@ a {
 .eyebrow {
   margin: 0 0 10px;
   color: var(--warm);
-  font-size: 0.82rem;
+  font-size: 1.1rem;
   font-weight: 900;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -205,12 +205,12 @@ a {
 }
 
 .button-primary {
-  background: var(--warm);
-  color: var(--white);
+  background: #d7c7ad;
+  color: var(--charcoal);
 }
 
 .button-primary:hover {
-  background: #9f6b36;
+  background: #cdbc9f;
 }
 
 .hero .button {
@@ -262,6 +262,10 @@ a {
   font-size: clamp(1.8rem, 4vw, 3.4rem);
   line-height: 1.1;
   letter-spacing: 0;
+}
+
+.about-grid .eyebrow {
+  color: var(--warm);
 }
 
 .intro-grid p,
@@ -513,14 +517,14 @@ a {
 }
 
 .contact-details strong {
-  color: var(--green-dark);
+  color: var(--warm);
   font-size: 0.82rem;
   letter-spacing: 0;
   text-transform: uppercase;
 }
 
 .contact-details a {
-  color: var(--charcoal);
+  color: var(--green-dark);
   font-size: 1.05rem;
   font-weight: 800;
   text-decoration-color: rgb(185 130 74 / 48%);
