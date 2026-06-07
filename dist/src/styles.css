@@ -108,7 +108,7 @@ a {
 
 .site-nav a[aria-current],
 .site-nav a:hover {
-  background: #e8dfd0;
+  background: #d7c7ad;
 }
 
 .site-nav .nav-cta {
@@ -168,6 +168,7 @@ a {
 
 .hero h1 {
   max-width: none;
+  color: var(--green-dark);
   font-size: clamp(3rem, 8vw, 6rem);
   white-space: nowrap;
 }
@@ -175,6 +176,7 @@ a {
 .hero p {
   max-width: 620px;
   margin: 0 auto 26px;
+  color: var(--warm);
   font-size: clamp(1.15rem, 2.2vw, 1.55rem);
   font-weight: 700;
 }
@@ -209,6 +211,12 @@ a {
 
 .button-primary:hover {
   background: #9f6b36;
+}
+
+.hero .button {
+  min-height: 58px;
+  padding: 15px 26px;
+  font-size: 1.08rem;
 }
 
 .button-secondary {
@@ -577,6 +585,10 @@ a {
 
 .site-footer a {
   color: #f4d6b6;
+}
+
+.footer-contact a {
+  font-size: 20px;
 }
 
 .footer-brand p {

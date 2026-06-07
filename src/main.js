@@ -125,7 +125,7 @@ function renderHome() {
       <div class="hero-overlay">
         <h1>${site.businessName}</h1>
         <p>${site.tagline}</p>
-        <a class="button button-primary" href="/contact" data-link>Get a Quote</a>
+        <a class="button button-primary" href="/contact" data-link>Get a Free Quote</a>
       </div>
     </section>
     <section class="section testimonials">
