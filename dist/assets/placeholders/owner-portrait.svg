@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">Landscaper portrait placeholder</title>
+  <desc id="desc">A neutral portrait placeholder for the landscaper profile photo.</desc>
+  <rect width="900" height="900" fill="#d9d1c2"/>
+  <circle cx="450" cy="330" r="142" fill="#356448"/>
+  <path d="M178 820c32-210 185-326 452-326 78 0 151 12 219 35v291z" fill="#183b2b"/>
+  <rect x="112" y="108" width="676" height="676" rx="8" fill="none" stroke="#ffffff" stroke-width="20" opacity=".48"/>
+  <text x="450" y="724" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="44" font-weight="700">Owner photo</text>
+</svg>

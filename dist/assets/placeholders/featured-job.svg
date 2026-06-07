@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Featured hardscape project placeholder</title>
+  <desc id="desc">A stylized backyard patio placeholder ready to be replaced with a real completed job photo.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#c7d8cf"/>
+      <stop offset="1" stop-color="#f5f1ea"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0" x2="1">
+      <stop offset="0" stop-color="#315f43"/>
+      <stop offset="1" stop-color="#7e9b62"/>
+    </linearGradient>
+    <pattern id="pavers" width="156" height="98" patternUnits="userSpaceOnUse">
+      <rect width="156" height="98" fill="#c9bba7"/>
+      <path d="M0 0h156M0 49h156M78 0v49M24 49v49M124 49v49" fill="none" stroke="#9a8d7b" stroke-width="5"/>
+    </pattern>
+  </defs>
+  <rect width="1800" height="1100" fill="url(#sky)"/>
+  <path d="M0 500c230-60 400-58 585-10 210 54 415 24 632-54 221-79 450-83 783 16v648H0z" fill="url(#grass)"/>
+  <path d="M0 790c248-92 496-138 743-138 334 0 589 85 857 217v231H0z" fill="url(#pavers)"/>
+  <path d="M1180 486c85 28 160 75 220 140M1295 444c76 40 136 94 180 162M1370 528c69 23 130 59 183 108" fill="none" stroke="#183b2b" stroke-width="20" stroke-linecap="round"/>
+  <rect x="124" y="164" width="560" height="260" rx="8" fill="#ffffff" opacity=".32"/>
+  <text x="166" y="278" fill="#183b2b" font-family="Arial, sans-serif" font-size="52" font-weight="700">Featured job photo</text>
+  <text x="166" y="344" fill="#356448" font-family="Arial, sans-serif" font-size="34">Replace this image in the CMS</text>
+</svg>

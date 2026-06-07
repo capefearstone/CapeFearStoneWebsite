@@ -1,0 +1,92 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "content"
+    label: "Site Content"
+    files:
+      - label: "Business Info"
+        name: "site"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - { label: "Business Name", name: "businessName", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Service Area", name: "serviceArea", widget: "string" }
+          - { label: "Hero Image", name: "heroImage", widget: "image" }
+          - { label: "Hero Alt Text", name: "heroAlt", widget: "string" }
+          - { label: "Intro Title", name: "introTitle", widget: "string" }
+          - { label: "Intro Text", name: "introText", widget: "text" }
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            field: { label: "Service", name: "service", widget: "string" }
+      - label: "About"
+        name: "about"
+        file: "content/about.json"
+        format: "json"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Role", name: "role", widget: "string" }
+          - { label: "Portrait", name: "portrait", widget: "image" }
+          - { label: "Portrait Alt Text", name: "portraitAlt", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+      - label: "Contact"
+        name: "contact"
+        file: "content/contact.json"
+        format: "json"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - { label: "Response Note", name: "responseNote", widget: "text" }
+      - label: "Services Page"
+        name: "services"
+        file: "content/services.json"
+        format: "json"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Alt Text", name: "alt", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+      - label: "Testimonials"
+        name: "testimonials"
+        file: "content/testimonials.json"
+        format: "json"
+        fields:
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Reviewer Name", name: "name", widget: "string" }
+              - { label: "Project Type", name: "projectType", widget: "string" }
+              - { label: "Quote", name: "quote", widget: "text" }
+      - label: "Gallery Projects"
+        name: "gallery"
+        file: "content/gallery.json"
+        format: "json"
+        fields:
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Alt Text", name: "alt", widget: "string" }
+              - { label: "Project Type", name: "projectType", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Featured", name: "featured", widget: "boolean", default: false }

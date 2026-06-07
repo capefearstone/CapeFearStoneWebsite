@@ -1,0 +1,19 @@
+{
+  "testimonials": [
+    {
+      "name": "Homeowner Name",
+      "projectType": "Patio installation",
+      "quote": "The crew made our backyard feel completely new. The work was neat, sturdy, and finished exactly how we hoped."
+    },
+    {
+      "name": "Client Name",
+      "projectType": "Stone border and planting beds",
+      "quote": "Clear communication, fair pricing, and a clean result. We get compliments on the front yard all the time."
+    },
+    {
+      "name": "Neighbor Name",
+      "projectType": "Walkway repair",
+      "quote": "He showed up when he said he would and left the space looking better than expected."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "businessName": "Cape Fear Stone",
+  "tagline": "Custom Hardscapes in the Cape Fear Area",
+  "phone": "(910) 555-0148",
+  "email": "hello@capefearstoneworks.com",
+  "serviceArea": "Wilmington, Leland, and the Cape Fear region",
+  "heroImage": "/assets/placeholders/featured-job.svg",
+  "heroAlt": "Placeholder image slot for a completed hardscape project",
+  "introTitle": "Outdoor spaces that feel finished, useful, and built to last.",
+  "introText": "From patios and walkways to planting beds and stone borders, this site is ready for real project photos and details from the landscaper's completed work.",
+  "services": [
+    "Patios and walkways",
+    "Retaining walls",
+    "Mulch and bed refreshes",
+    "Drainage and grading",
+    "Planting and cleanup",
+    "Stone edging"
+  ]
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Planting bed placeholder</title>
+  <desc id="desc">Stylized planting bed placeholder image.</desc>
+  <rect width="1200" height="750" fill="#f5f1ea"/>
+  <path d="M0 480c220-96 420-130 604-102 186 28 367 109 596 86v286H0z" fill="#7e9b62"/>
+  <path d="M0 545c204-72 414-86 630-43 208 42 400 50 570 2v246H0z" fill="#5f4228"/>
+  <circle cx="235" cy="412" r="70" fill="#356448"/>
+  <circle cx="382" cy="388" r="90" fill="#183b2b"/>
+  <circle cx="545" cy="420" r="74" fill="#356448"/>
+  <circle cx="776" cy="408" r="82" fill="#183b2b"/>
+  <text x="72" y="126" fill="#183b2b" font-family="Arial, sans-serif" font-size="54" font-weight="700">Landscape bed photo</text>
+</svg>

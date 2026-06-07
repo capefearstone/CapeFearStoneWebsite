@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Walkway project placeholder</title>
+  <desc id="desc">Stylized walkway placeholder image.</desc>
+  <rect width="1200" height="750" fill="#c7d8cf"/>
+  <rect y="330" width="1200" height="420" fill="#356448"/>
+  <path d="M450 750c35-160 66-284 105-396 38-110 88-204 156-354h252c-90 140-159 260-207 368-54 119-78 240-104 382z" fill="#c9bba7"/>
+  <path d="M574 450h256M536 548h257M502 650h252" stroke="#9a8d7b" stroke-width="8"/>
+  <text x="72" y="126" fill="#183b2b" font-family="Arial, sans-serif" font-size="54" font-weight="700">Walkway photo</text>
+</svg>

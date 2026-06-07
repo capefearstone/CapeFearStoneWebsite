@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Patio project placeholder</title>
+  <desc id="desc">Stylized patio placeholder image.</desc>
+  <rect width="1200" height="750" fill="#e8dfd0"/>
+  <path d="M0 280c150-40 300-38 448 6 196 59 408 36 752-58v522H0z" fill="#356448"/>
+  <path d="M0 455h1200v295H0z" fill="#c9bba7"/>
+  <path d="M0 528h1200M0 604h1200M0 680h1200M120 455v73M330 528v76M590 455v73M820 604v76M1010 528v76" stroke="#9a8d7b" stroke-width="6"/>
+  <text x="72" y="124" fill="#183b2b" font-family="Arial, sans-serif" font-size="54" font-weight="700">Patio photo</text>
+</svg>

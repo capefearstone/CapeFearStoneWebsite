@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "title": "Large Backyard Patio",
+      "image": "/assets/placeholders/project-patio.svg",
+      "alt": "Placeholder image for a backyard patio project",
+      "projectType": "Patio and seating area",
+      "location": "Wilmington, NC",
+      "description": "Use this slot for a finished patio photo and a short note about the materials, layout, or challenge.",
+      "featured": true
+    },
+    {
+      "title": "Stone Walkway",
+      "image": "/assets/placeholders/project-walkway.svg",
+      "alt": "Placeholder image for a stone walkway project",
+      "projectType": "Walkway",
+      "location": "Leland, NC",
+      "description": "Replace with a real project image showing a path, border, or entryway improvement.",
+      "featured": false
+    },
+    {
+      "title": "Refreshed Front Beds",
+      "image": "/assets/placeholders/project-beds.svg",
+      "alt": "Placeholder image for a planting bed refresh",
+      "projectType": "Landscape refresh",
+      "location": "Cape Fear region",
+      "description": "A place for before-and-after friendly project details, plantings, mulch, edging, or cleanup.",
+      "featured": false
+    },
+    {
+      "title": "Retaining Wall Detail",
+      "image": "/assets/placeholders/project-wall.svg",
+      "alt": "Placeholder image for a retaining wall project",
+      "projectType": "Hardscape wall",
+      "location": "Local project",
+      "description": "Add a real detail shot that shows craftsmanship, clean lines, and finished stonework.",
+      "featured": false
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Retaining wall placeholder</title>
+  <desc id="desc">Stylized hardscape wall placeholder image.</desc>
+  <rect width="1200" height="750" fill="#d9d1c2"/>
+  <path d="M0 0h1200v335H0z" fill="#c7d8cf"/>
+  <path d="M0 320c220-50 422-35 608 45 176 75 372 86 592 12v373H0z" fill="#356448"/>
+  <path d="M0 456h1200v294H0z" fill="#a99b88"/>
+  <path d="M0 520h1200M0 598h1200M0 676h1200M180 456v64M420 520v78M690 456v64M945 598v78" stroke="#746a5e" stroke-width="7"/>
+  <text x="72" y="126" fill="#183b2b" font-family="Arial, sans-serif" font-size="54" font-weight="700">Stone wall photo</text>
+</svg>

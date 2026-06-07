@@ -1,0 +1,38 @@
+{
+  "heading": "Services",
+  "intro": "Custom hardscape work for patios, walls, walkways, outdoor living areas, and clean finished details around the home.",
+  "services": [
+    {
+      "title": "Custom Patios",
+      "eyebrow": "Outdoor living",
+      "image": "/assets/placeholders/project-patio.svg",
+      "alt": "Placeholder image for a custom patio service",
+      "description": "Create a backyard space for grilling, gathering, and relaxing with paver or stone patio layouts shaped around the way the home is used.",
+      "buttonText": "Plan a Patio"
+    },
+    {
+      "title": "Walkways and Entries",
+      "eyebrow": "Paths and access",
+      "image": "/assets/placeholders/project-walkway.svg",
+      "alt": "Placeholder image for a walkway service",
+      "description": "Add cleaner movement through the yard with walkways, front entries, step transitions, and stone paths that feel intentional from the street to the door.",
+      "buttonText": "Start a Walkway"
+    },
+    {
+      "title": "Retaining Walls",
+      "eyebrow": "Structure and grade",
+      "image": "/assets/placeholders/project-wall.svg",
+      "alt": "Placeholder image for a retaining wall service",
+      "description": "Build usable space and define elevation changes with hardscape walls designed for a neat finished look and practical support.",
+      "buttonText": "Discuss a Wall"
+    },
+    {
+      "title": "Bed Borders and Stone Edging",
+      "eyebrow": "Clean finish work",
+      "image": "/assets/placeholders/project-beds.svg",
+      "alt": "Placeholder image for stone edging and planting bed work",
+      "description": "Refresh planting beds, mulch areas, and yard edges with stone borders and hardscape details that make the property feel maintained and complete.",
+      "buttonText": "Refresh the Yard"
+    }
+  ]
+}
