@@ -106,13 +106,13 @@ function shell(pageHtml) {
     </header>
     <main>${pageHtml}</main>
     <footer class="site-footer">
-      <div>
+      <div class="footer-brand">
         <strong>${site.businessName}</strong>
-        <p>${site.tagline}</p>
+        <p>&copy; 2026 Cape Fear Stone. Website Designed by Cam Spitler.</p>
       </div>
-      <div>
-        <p>${site.serviceArea}</p>
-        <p><a href="tel:${site.phone.replace(/[^0-9]/g, "")}">${site.phone}</a> · <a href="mailto:${site.email}">${site.email}</a></p>
+      <div class="footer-contact">
+        <p><span>Email</span><a href="mailto:${site.email}">${site.email}</a></p>
+        <p><span>Phone</span><a href="tel:${site.phone.replace(/[^0-9]/g, "")}">${site.phone}</a></p>
       </div>
     </footer>
   `;
@@ -179,8 +179,8 @@ function renderContact() {
       <div class="contact-panel">
         <div class="contact-details">
           <h2>Contact</h2>
-          <p><strong>Phone</strong><a href="tel:${site.phone.replace(/[^0-9]/g, "")}">${site.phone}</a></p>
           <p><strong>Email</strong><a href="mailto:${site.email}">${site.email}</a></p>
+          <p><strong>Phone</strong><a href="tel:${site.phone.replace(/[^0-9]/g, "")}">${site.phone}</a></p>
         </div>
         <form class="contact-form" name="project-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="project-inquiry" />
