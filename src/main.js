@@ -81,7 +81,7 @@ function serviceSections(items) {
           <div class="service-feature__content">
             <p class="eyebrow">${item.eyebrow}</p>
             <h2>${item.title}</h2>
-            <a class="button button-secondary" href="/contact" data-link>${item.buttonText}</a>
+            <a class="button button-primary" href="/contact" data-link>${item.buttonText}</a>
           </div>
         </article>
       `
@@ -145,7 +145,7 @@ function renderAbout() {
         <p class="eyebrow">${about.role}</p>
         <h2>${about.name}</h2>
         <p>${about.description}</p>
-        <a class="button button-secondary" href="/contact" data-link>Start a project</a>
+        <a class="button button-primary" href="/contact" data-link>Start a Project</a>
       </div>
     </section>
   `);

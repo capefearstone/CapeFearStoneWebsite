@@ -8,6 +8,7 @@
   --green-dark: #183b2b;
   --charcoal: #202421;
   --warm: #b9824a;
+  --quote: #d7c7ad;
   --white: #ffffff;
   --line: #ddd6ca;
   --shadow: 0 18px 48px rgb(32 36 33 / 14%);
@@ -102,7 +103,7 @@ a {
   align-items: center;
   padding: 8px 14px;
   border-radius: 8px;
-  color: #3d423e;
+  color: var(--green-dark);
   font-weight: 700;
   text-decoration: none;
 }
@@ -114,13 +115,13 @@ a {
 
 .site-nav .nav-cta {
   background: transparent;
-  color: #3d423e;
+  color: var(--warm);
 }
 
 .site-nav .nav-cta:hover,
 .site-nav .nav-cta[aria-current] {
   background: var(--green-dark);
-  color: var(--white);
+  color: var(--warm);
 }
 
 .hero {
@@ -205,8 +206,9 @@ a {
 }
 
 .button-primary {
-  background: #d7c7ad;
-  color: var(--charcoal);
+  border: 2px solid var(--quote);
+  background: var(--quote);
+  color: var(--green-dark);
 }
 
 .button-primary:hover {
@@ -276,6 +278,11 @@ a {
   max-width: 680px;
   margin: 0 0 18px;
   color: #4d544f;
+}
+
+.about-grid p:not(.eyebrow) {
+  color: var(--green-dark);
+  font-family: inherit;
 }
 
 .service-list {
@@ -542,6 +549,7 @@ a {
 }
 
 .contact-form label {
+  color: var(--green-dark);
   font-weight: 900;
 }
 
@@ -582,7 +590,7 @@ a {
 
 .site-footer p {
   margin: 4px 0 0;
-  color: #d7d0c4;
+  color: var(--white);
 }
 
 .footer-brand {
@@ -592,7 +600,7 @@ a {
 }
 
 .site-footer a {
-  color: #f4d6b6;
+  color: var(--white);
 }
 
 .footer-contact a {
@@ -638,7 +646,7 @@ a {
 }
 
 .footer-contact span {
-  color: #d7d0c4;
+  color: var(--white);
   font-size: 0.82rem;
   font-weight: 900;
   text-transform: uppercase;
