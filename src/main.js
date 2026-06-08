@@ -63,8 +63,6 @@ function galleryCards(items) {
               <p class="eyebrow">${item.projectType}</p>
               <h3>${item.title}</h3>
             </div>
-            <p>${item.description}</p>
-            <span>${item.location}</span>
           </div>
         </article>
       `

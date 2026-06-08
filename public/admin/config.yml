@@ -87,6 +87,4 @@ collections:
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Alt Text", name: "alt", widget: "string" }
               - { label: "Project Type", name: "projectType", widget: "string" }
-              - { label: "Location", name: "location", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
               - { label: "Featured", name: "featured", widget: "boolean", default: false }
