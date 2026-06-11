@@ -7,6 +7,65 @@
     <title>Content Manager | Cape Fear Stone</title>
   </head>
   <body>
-    <script src="https://unpkg.com/decap-cms@3.6.2/dist/decap-cms.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      (function () {
+        var identityTokenNames = ["invite_token", "recovery_token", "confirmation_token", "access_token"];
+        var decapLoaded = false;
+
+        function identityHashParams() {
+          return new URLSearchParams((window.location.hash || "").replace(/^#\/?/, ""));
+        }
+
+        function hasIdentityToken() {
+          if (!window.location.hash) {
+            return false;
+          }
+
+          var hashParams = identityHashParams();
+          return identityTokenNames.some(function (tokenName) {
+            return hashParams.has(tokenName);
+          });
+        }
+
+        function loadDecap() {
+          if (decapLoaded) {
+            return;
+          }
+
+          decapLoaded = true;
+
+          var script = document.createElement("script");
+          script.src = "https://unpkg.com/decap-cms@3.6.2/dist/decap-cms.js";
+          document.body.appendChild(script);
+        }
+
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", function (user) {
+            if (!user && hasIdentityToken()) {
+              return;
+            }
+
+            loadDecap();
+          });
+
+          window.netlifyIdentity.on("login", function () {
+            window.location.href = "/admin/";
+          });
+
+          window.netlifyIdentity.on("close", function () {
+            if (!hasIdentityToken()) {
+              loadDecap();
+            }
+          });
+
+          if (!hasIdentityToken()) {
+            window.setTimeout(loadDecap, 1500);
+          }
+        } else if (!hasIdentityToken()) {
+          loadDecap();
+        }
+      })();
+    </script>
   </body>
 </html>

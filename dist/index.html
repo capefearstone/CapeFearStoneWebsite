@@ -8,6 +8,25 @@
       content="A CMS-ready landscaping and hardscaping website with project galleries, testimonials, and a contact form."
     />
     <title>Cape Fear Stone</title>
+    <script>
+      (function () {
+        var identityTokenNames = ["invite_token", "recovery_token", "confirmation_token", "access_token"];
+        var hash = window.location.hash;
+
+        if (!hash || window.location.pathname === "/admin/") {
+          return;
+        }
+
+        var hashParams = new URLSearchParams(hash.replace(/^#\/?/, ""));
+        var hasIdentityToken = identityTokenNames.some(function (tokenName) {
+          return hashParams.has(tokenName);
+        });
+
+        if (hasIdentityToken) {
+          window.location.replace("/admin/" + hash);
+        }
+      })();
+    </script>
     <link rel="stylesheet" href="/src/styles.css" />
   </head>
   <body>
