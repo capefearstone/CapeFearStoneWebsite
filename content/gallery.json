@@ -8,7 +8,7 @@
       "featured": true
     },
     {
-      "title": "Patio Seating Area",
+      "title": "Paver Patio",
       "image": "/uploads/img_3399.dng",
       "alt": "Placeholder image for a patio seating area project",
       "projectType": "Outdoor living",
@@ -16,14 +16,14 @@
     },
     {
       "title": "Stone Walkway",
-      "image": "/assets/placeholders/project-walkway.svg",
+      "image": "/uploads/fb_img_1780762556177.jpg",
       "alt": "Placeholder image for a stone walkway project",
       "projectType": "Paths and access",
       "featured": false
     },
     {
-      "title": "Front Entry Walkway",
-      "image": "/assets/placeholders/project-walkway.svg",
+      "title": "Walkway Under Fence",
+      "image": "/uploads/fb_img_1780762778231.jpg",
       "alt": "Placeholder image for a front entry walkway project",
       "projectType": "Paths and access",
       "featured": false
@@ -44,7 +44,7 @@
     },
     {
       "title": "Refreshed Front Beds",
-      "image": "/uploads/updatedsethpatioimage.png",
+      "image": "/uploads/img_3405.dng",
       "alt": "Placeholder image for a planting bed refresh",
       "projectType": "Clean finish work",
       "featured": false
