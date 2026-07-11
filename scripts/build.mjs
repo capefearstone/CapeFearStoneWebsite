@@ -89,7 +89,8 @@ function seoBlock(path, { noindex = false } = {}) {
 
   return `<!-- SEO:START -->
     <title>${title}</title>
-    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="description" content="${description}" />
