@@ -563,6 +563,36 @@ a {
   text-underline-offset: 4px;
 }
 
+.facebook-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  gap: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.facebook-link svg {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
+  fill: currentColor;
+}
+
+.facebook-link--contact {
+  padding: 9px 14px;
+  background: #1877f2;
+  color: var(--white) !important;
+  font-size: 0.95rem !important;
+  text-decoration: none !important;
+}
+
+.facebook-link--contact:hover,
+.facebook-link--contact:focus-visible {
+  background: #0f68d7;
+}
+
 .contact-service-area span {
   color: var(--green-dark);
   font-weight: 800;
@@ -669,6 +699,12 @@ a {
 
 .footer-contact a {
   overflow-wrap: anywhere;
+}
+
+.footer-contact .facebook-link--footer {
+  justify-self: start;
+  color: var(--white);
+  font-size: 16px;
 }
 
 .footer-contact span {

@@ -54,6 +54,7 @@ export function localBusinessSchema(site, services) {
     description: seoByPath["/"].description,
     telephone: site.phone,
     email: site.email,
+    sameAs: site.facebook ? [site.facebook] : undefined,
     areaServed: site.serviceArea,
     founder: {
       "@type": "Person",

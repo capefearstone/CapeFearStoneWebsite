@@ -14,6 +14,15 @@ export function createSiteRenderer({ site, about, serviceData, testimonialData, 
     return items.map((item) => `<li>${item}</li>`).join("");
   }
 
+  function facebookLink(className = "") {
+    return `<a class="facebook-link ${className}" href="${site.facebook}" target="_blank" rel="noopener noreferrer" aria-label="Cape Fear Stone on Facebook">
+      <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+        <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.435H7.078v-3.492h3.047V9.414c0-3.028 1.792-4.7 4.533-4.7 1.312 0 2.686.236 2.686.236v2.974h-1.513c-1.49 0-1.956.931-1.956 1.887v2.262h3.328l-.532 3.492h-2.796V24C19.612 23.094 24 18.1 24 12.073Z" />
+      </svg>
+      <span>Facebook</span>
+    </a>`;
+  }
+
   function testimonialCards(items) {
     return items
       .map(
@@ -89,6 +98,7 @@ export function createSiteRenderer({ site, about, serviceData, testimonialData, 
         <div class="footer-contact">
           <p><span>Email</span><a href="mailto:${site.email}">${site.email}</a></p>
           <p><span>Phone</span><a href="tel:${site.phone.replace(/[^0-9]/g, "")}">${site.phone}</a></p>
+          <p><span>Social</span>${facebookLink("facebook-link--footer")}</p>
         </div>
       </footer>
     `;
@@ -164,6 +174,7 @@ export function createSiteRenderer({ site, about, serviceData, testimonialData, 
             <h1>${contact.heading}</h1>
             <p><strong>Email</strong><a href="mailto:${site.email}">${site.email}</a></p>
             <p><strong>Phone</strong><a href="tel:${site.phone.replace(/[^0-9]/g, "")}">${site.phone}</a></p>
+            <p><strong>Facebook</strong>${facebookLink("facebook-link--contact")}</p>
             <p class="contact-service-area"><strong>Service area</strong><span>${site.serviceArea}</span></p>
           </div>
           <form class="contact-form" name="project-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
