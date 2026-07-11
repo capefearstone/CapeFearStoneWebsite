@@ -1,13 +1,11 @@
 {
   "heading": "Services",
-  "intro": "Custom hardscape work for patios, walls, walkways, outdoor living areas, and clean finished details around the home.",
   "services": [
     {
       "title": "Bed Borders and Stone Edging",
       "eyebrow": "Clean finish work",
       "image": "/uploads/fb_img_1780762627215.jpg",
       "alt": "Placeholder image for stone edging and planting bed work",
-      "description": "Refresh planting beds, mulch areas, and yard edges with stone borders and hardscape details that make the property feel maintained and complete.",
       "buttonText": "Refresh the Yard"
     },
     {
@@ -15,7 +13,6 @@
       "eyebrow": "Paths and access",
       "image": "/uploads/fb_img_1780762570572.jpeg",
       "alt": "Placeholder image for a walkway service",
-      "description": "Add cleaner movement through the yard with walkways, front entries, step transitions, and stone paths that feel intentional from the street to the door.",
       "buttonText": "Start a Walkway"
     },
     {
@@ -23,7 +20,6 @@
       "eyebrow": "Structure and grade",
       "image": "/uploads/fb_img_1780762878381.jpg",
       "alt": "Placeholder image for a retaining wall service",
-      "description": "Build usable space and define elevation changes with hardscape walls designed for a neat finished look and practical support.",
       "buttonText": "Discuss a Wall"
     },
     {
@@ -31,7 +27,6 @@
       "eyebrow": "Outdoor living",
       "image": "/uploads/fb_img_1780762758193.jpg",
       "alt": "Placeholder image for a custom patio service",
-      "description": "Create a backyard space for grilling, gathering, and relaxing with paver or stone patio layouts shaped around the way the home is used.",
       "buttonText": "Plan a Patio"
     }
   ]

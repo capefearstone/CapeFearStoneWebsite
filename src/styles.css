@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Serif:wght@700&display=swap");
-
 :root {
   color-scheme: light;
   --stone: #d9d1c2;
@@ -242,7 +240,7 @@ a {
 .section h2,
 .section h1,
 .page-hero h1,
-.contact-details h2 {
+.contact-details h1 {
   color: var(--green-dark);
 }
 
@@ -257,7 +255,7 @@ a {
 
 .intro-grid h2,
 .split-band h2,
-.about-grid h2,
+.about-grid h1,
 .services-page h1,
 .section-heading h2 {
   margin: 0 0 14px;
@@ -267,6 +265,10 @@ a {
 }
 
 .about-grid .eyebrow {
+  color: var(--warm);
+}
+
+.intro-grid .eyebrow {
   color: var(--warm);
 }
 
@@ -295,12 +297,14 @@ a {
 }
 
 .service-list li {
-  min-height: 52px;
+  min-height: 68px;
   display: flex;
   align-items: center;
-  padding: 12px 14px;
-  border-left: 4px solid var(--warm);
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
   background: var(--white);
+  color: var(--green-dark);
   box-shadow: 0 8px 24px rgb(32 36 33 / 8%);
   font-weight: 800;
 }
@@ -326,7 +330,8 @@ a {
   letter-spacing: 0;
 }
 
-.services-page .section-heading p {
+.services-page .section-heading p,
+.portfolio-page .section-heading p {
   max-width: 700px;
   margin: 0 auto;
   color: #4d544f;
@@ -496,7 +501,7 @@ a {
   padding: 22px;
 }
 
-.project-card h3 {
+.project-card h2 {
   margin: 0;
   font-size: 1.35rem;
   line-height: 1.2;
@@ -530,7 +535,7 @@ a {
   padding: 6px 0;
 }
 
-.contact-details h2 {
+.contact-details h1 {
   margin: 0 0 8px;
   font-size: clamp(2rem, 4vw, 3.3rem);
   line-height: 1.05;
@@ -556,6 +561,11 @@ a {
   font-weight: 800;
   text-decoration-color: rgb(185 130 74 / 48%);
   text-underline-offset: 4px;
+}
+
+.contact-service-area span {
+  color: var(--green-dark);
+  font-weight: 800;
 }
 
 .contact-form {

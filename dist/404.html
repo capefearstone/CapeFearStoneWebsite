@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO:START -->
+    <title>Page Not Found | Cape Fear Stone</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="description" content="The requested page could not be found. Return to Cape Fear Stone to explore our hardscaping services." />
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="https://capefearstone.com/404/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Cape Fear Stone" />
+    <meta property="og:title" content="Page Not Found | Cape Fear Stone" />
+    <meta property="og:description" content="The requested page could not be found. Return to Cape Fear Stone to explore our hardscaping services." />
+    <meta property="og:url" content="https://capefearstone.com/404/" />
+    <meta property="og:image" content="https://capefearstone.com/assets/cape-fear-stone-logo.png" />
+    <meta property="og:image:alt" content="Cape Fear Stone logo" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Page Not Found | Cape Fear Stone" />
+    <meta name="twitter:description" content="The requested page could not be found. Return to Cape Fear Stone to explore our hardscaping services." />
+    <meta name="twitter:image" content="https://capefearstone.com/assets/cape-fear-stone-logo.png" />
+    <!-- SEO:END -->
+    <script>
+      (function () {
+        var identityTokenNames = ["invite_token", "recovery_token", "confirmation_token", "access_token"];
+        var hash = window.location.hash;
+
+        if (!hash || window.location.pathname === "/admin/") {
+          return;
+        }
+
+        var hashParams = new URLSearchParams(hash.replace(/^#\/?/, ""));
+        var hasIdentityToken = identityTokenNames.some(function (tokenName) {
+          return hashParams.has(tokenName);
+        });
+
+        if (hasIdentityToken) {
+          window.location.replace("/admin/" + hash);
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Serif:wght@700&display=swap"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <form name="project-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="project-inquiry" />
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="email" type="email" />
+      <textarea name="message"></textarea>
+    </form>
+    <div id="app">
+      <header class="site-header">
+        <a class="brand" href="/" aria-label="Cape Fear Stone home" data-link>
+          <span class="brand-name">Cape Fear Stone</span>
+          <span class="brand-subtitle">Custom Hardscapes</span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="/" data-link>Home</a>
+          <a href="/about/" data-link>About</a>
+          <a href="/services/" data-link>Services</a>
+          <a href="/portfolio/" data-link>Portfolio</a>
+          <a class="nav-cta" href="/contact/" data-link>Contact</a>
+        </nav>
+      </header>
+      <main>
+      <section class="page-hero">
+        <p class="eyebrow">404</p>
+        <h1>Page not found</h1>
+        <p>The page you requested may have moved or no longer exists.</p>
+        <a class="button button-primary" href="/">Return Home</a>
+      </section>
+    </main>
+      <footer class="site-footer">
+        <div class="footer-brand">
+          <strong>Cape Fear Stone</strong>
+          <p>&copy; 2026 Cape Fear Stone. Website Designed by Cam Spitler.</p>
+        </div>
+        <div class="footer-contact">
+          <p><span>Email</span><a href="mailto:capefearstone@gmail.com">capefearstone@gmail.com</a></p>
+          <p><span>Phone</span><a href="tel:9105155885">910-515-5885</a></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

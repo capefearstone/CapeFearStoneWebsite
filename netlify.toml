@@ -4,15 +4,10 @@
 
 [[redirects]]
   from = "/gallery"
-  to = "/portfolio"
+  to = "/portfolio/"
   status = 301
 
 [[redirects]]
   from = "/gallery/"
-  to = "/portfolio"
+  to = "/portfolio/"
   status = 301
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
