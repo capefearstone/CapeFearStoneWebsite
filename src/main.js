@@ -48,7 +48,7 @@ function updateMetadata(path) {
   setMeta('meta[name="twitter:description"]', "content", metadata.description);
 }
 
-function navigate(path) {
+function navigate(path, hash = "") {
   const routePath = normalizeRoutePath(path);
   const renderer = routes[routePath];
 
@@ -60,7 +60,11 @@ function navigate(path) {
   app.innerHTML = renderer();
   updateMetadata(routePath);
   updateActiveNav(routePath);
-  window.scrollTo({ top: 0, behavior: "auto" });
+  if (hash) {
+    document.querySelector(hash)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  } else {
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }
 }
 
 function updateActiveNav(path) {
@@ -78,11 +82,11 @@ document.addEventListener("click", (event) => {
   if (url.origin !== window.location.origin) return;
 
   event.preventDefault();
-  history.pushState({}, "", url.pathname);
-  navigate(url.pathname);
+  history.pushState({}, "", `${url.pathname}${url.hash}`);
+  navigate(url.pathname, url.hash);
 });
 
-window.addEventListener("popstate", () => navigate(location.pathname));
+window.addEventListener("popstate", () => navigate(location.pathname, location.hash));
 
 updateMetadata(normalizeRoutePath(location.pathname));
 updateActiveNav(normalizeRoutePath(location.pathname));

@@ -2,56 +2,56 @@
   "projects": [
     {
       "title": "Large Backyard Patio",
-      "image": "/uploads/updatedsethpatioimage.png",
+      "image": "/uploads/optimized/large-backyard-patio.webp",
       "alt": "Placeholder image for a backyard patio project",
       "projectType": "Outdoor living",
       "featured": false
     },
     {
       "title": "Paver Patio",
-      "image": "/uploads/img_3399.jpg",
+      "image": "/uploads/optimized/paver-patio.webp",
       "alt": "Placeholder image for a patio seating area project",
       "projectType": "Outdoor living",
       "featured": false
     },
     {
       "title": "Stone Walkway",
-      "image": "/uploads/fb_img_1780762556177.jpg",
+      "image": "/uploads/optimized/stone-walkway.webp",
       "alt": "Placeholder image for a stone walkway project",
       "projectType": "Paths and access",
       "featured": false
     },
     {
       "title": "Walkway Under Fence",
-      "image": "/uploads/fb_img_1780762778231.jpg",
+      "image": "/uploads/optimized/walkway-under-fence.webp",
       "alt": "Placeholder image for a front entry walkway project",
       "projectType": "Paths and access",
       "featured": false
     },
     {
       "title": "Small Retaining Wall",
-      "image": "/uploads/fb_img_1780762878381.jpg",
+      "image": "/uploads/optimized/small-retaining-wall.webp",
       "alt": "Placeholder image for a retaining wall project",
       "projectType": "Structure and grade",
       "featured": false
     },
     {
       "title": "Long Retaining Wall",
-      "image": "/uploads/6839a376-2082-49a4-b85d-efaac4edb3ed.png",
+      "image": "/uploads/optimized/long-retaining-wall.webp",
       "alt": "Placeholder image for a raised retaining wall section",
       "projectType": "Structure and grade",
       "featured": false
     },
     {
       "title": "Refreshed Front Beds",
-      "image": "/uploads/img_3405.jpg",
+      "image": "/uploads/optimized/refreshed-front-beds.webp",
       "alt": "Placeholder image for a planting bed refresh",
       "projectType": "Clean finish work",
       "featured": false
     },
     {
       "title": "Refreshed Corner Bed",
-      "image": "/uploads/img_3658.jpeg",
+      "image": "/uploads/optimized/refreshed-corner-bed.webp",
       "alt": "Placeholder image for stone edging detail work",
       "projectType": "Clean finish work",
       "featured": false
