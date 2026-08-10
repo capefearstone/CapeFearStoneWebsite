@@ -7,11 +7,18 @@ export function createSiteRenderer({ site, about, serviceData, testimonialData, 
       ? 'loading="eager" fetchpriority="high"'
       : 'loading="lazy"';
 
-    return `<img class="${className}" src="${src}" alt="${alt}" ${loadingAttributes} decoding="async" />`;
+    const decoding = eager ? "sync" : "async";
+
+    return `<img class="${className}" src="${src}" alt="${alt}" ${loadingAttributes} decoding="${decoding}" />`;
   }
 
   function serviceList(items) {
-    return items.map((item) => `<li>${item}</li>`).join("");
+    return items
+      .map((item) => {
+        const sectionId = item.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+        return `<li><a href="/services/#${sectionId}" data-link>${item}</a></li>`;
+      })
+      .join("");
   }
 
   function facebookLink(className = "") {
@@ -42,9 +49,9 @@ export function createSiteRenderer({ site, about, serviceData, testimonialData, 
   function galleryCards(items) {
     return items
       .map(
-        (item) => `
+        (item, index) => `
           <article class="project-card">
-            ${image(item.image, item.alt, "project-image")}
+            ${image(item.image, item.alt, "project-image", { eager: index === 0 })}
             <div class="project-card__body">
               <div>
                 <p class="eyebrow">${item.projectType}</p>
@@ -61,8 +68,8 @@ export function createSiteRenderer({ site, about, serviceData, testimonialData, 
     return items
       .map(
         (item, index) => `
-          <article class="service-feature ${index % 2 === 1 ? "service-feature--reverse" : ""}">
-            ${image(item.image, item.alt, "service-feature__image")}
+          <article id="${item.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}" class="service-feature ${index % 2 === 1 ? "service-feature--reverse" : ""}">
+            ${image(item.image, item.alt, "service-feature__image", { eager: index === 0 })}
             <div class="service-feature__content">
               <p class="eyebrow">${item.eyebrow}</p>
               <h2>${item.title}</h2>
@@ -93,7 +100,7 @@ export function createSiteRenderer({ site, about, serviceData, testimonialData, 
       <footer class="site-footer">
         <div class="footer-brand">
           <strong>${site.businessName}</strong>
-          <p>&copy; 2026 Cape Fear Stone. Website Designed by Cam Spitler.</p>
+          <p>&copy; 2026 Cape Fear Stone. Website designed by <a href="https://csinteractive.net" target="_blank" rel="noopener noreferrer">CS Interactive</a>.</p>
         </div>
         <div class="footer-contact">
           <p><span>Email</span><a href="mailto:${site.email}">${site.email}</a></p>
@@ -133,7 +140,7 @@ export function createSiteRenderer({ site, about, serviceData, testimonialData, 
   function renderAbout() {
     return shell(`
       <section class="section about-grid">
-        ${image(about.portrait, about.portraitAlt, "portrait-image")}
+        ${image(about.portrait, about.portraitAlt, "portrait-image", { eager: true })}
         <div>
           <p class="eyebrow">${about.role}</p>
           <h1>${about.name}</h1>
