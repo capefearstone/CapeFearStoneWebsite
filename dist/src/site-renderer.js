@@ -107,6 +107,9 @@ export function createSiteRenderer({ site, about, serviceData, testimonialData, 
           <p><span>Phone</span><a href="tel:${site.phone.replace(/[^0-9]/g, "")}">${site.phone}</a></p>
           <p><span>Social</span>${facebookLink("facebook-link--footer")}</p>
         </div>
+        <nav class="footer-utility" aria-label="Footer navigation">
+          <a href="/sitemap/" data-link>Sitemap</a>
+        </nav>
       </footer>
     `;
   }
@@ -202,6 +205,39 @@ export function createSiteRenderer({ site, about, serviceData, testimonialData, 
     `);
   }
 
+  function renderSitemap() {
+    return shell(`
+      <section class="section sitemap-page">
+        <div class="section-heading">
+          <p class="eyebrow">Explore Cape Fear Stone</p>
+          <h1>Sitemap</h1>
+          <p>Find information about our hardscaping services, recent work, and how to start a project.</p>
+        </div>
+        <div class="sitemap-grid">
+          <section class="sitemap-group" aria-labelledby="sitemap-pages">
+            <h2 id="sitemap-pages">Main Pages</h2>
+            <ul>
+              <li><a href="/" data-link>Home</a></li>
+              <li><a href="/about/" data-link>About Cape Fear Stone</a></li>
+              <li><a href="/services/" data-link>Hardscaping Services</a></li>
+              <li><a href="/portfolio/" data-link>Project Portfolio</a></li>
+              <li><a href="/contact/" data-link>Request a Quote</a></li>
+            </ul>
+          </section>
+          <section class="sitemap-group" aria-labelledby="sitemap-services">
+            <h2 id="sitemap-services">Services</h2>
+            <ul>${serviceData.services
+              .map((service) => {
+                const sectionId = service.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+                return `<li><a href="/services/#${sectionId}" data-link>${service.title}</a></li>`;
+              })
+              .join("")}</ul>
+          </section>
+        </div>
+      </section>
+    `);
+  }
+
   function renderNotFound() {
     return shell(`
       <section class="page-hero">
@@ -219,7 +255,8 @@ export function createSiteRenderer({ site, about, serviceData, testimonialData, 
       "/about": renderAbout,
       "/services": renderServices,
       "/portfolio": renderPortfolio,
-      "/contact": renderContact
+      "/contact": renderContact,
+      "/sitemap": renderSitemap
     },
     renderNotFound
   };

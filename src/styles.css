@@ -761,10 +761,10 @@ textarea:focus-visible {
 }
 
 .site-footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
   align-items: flex-start;
-  justify-content: space-between;
-  gap: 24px;
+  gap: clamp(24px, 5vw, 72px);
   padding: 34px clamp(18px, 4vw, 64px);
   background: var(--charcoal);
   color: var(--white);
@@ -838,6 +838,68 @@ textarea:focus-visible {
   font-size: 0.82rem;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+.footer-utility {
+  align-self: center;
+  justify-self: end;
+  padding-left: clamp(0px, 2vw, 28px);
+  border-left: 1px solid rgb(255 253 250 / 14%);
+}
+
+.footer-utility a {
+  color: #a9ada9;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  text-transform: uppercase;
+}
+
+.sitemap-page {
+  min-height: 62vh;
+}
+
+.sitemap-page .section-heading p:last-child {
+  max-width: 650px;
+}
+
+.sitemap-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(20px, 4vw, 48px);
+  margin-top: clamp(30px, 5vw, 58px);
+}
+
+.sitemap-group {
+  padding: clamp(24px, 4vw, 38px);
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow-soft);
+}
+
+.sitemap-group h2 {
+  margin: 0 0 18px;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+}
+
+.sitemap-group ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sitemap-group a {
+  display: inline-flex;
+  color: var(--green-dark);
+  font-weight: 750;
+  text-decoration-color: rgb(155 100 50 / 44%);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
 
 .reveal {
@@ -987,9 +1049,19 @@ textarea:focus-visible {
   }
 
   .site-footer {
+    grid-template-columns: minmax(0, 1fr) auto;
     gap: 16px;
     padding-right: 18px;
     padding-left: 18px;
+  }
+
+  .footer-utility {
+    grid-column: 1 / -1;
+    justify-self: end;
+    padding-top: 10px;
+    padding-left: 0;
+    border-top: 1px solid rgb(255 253 250 / 14%);
+    border-left: 0;
   }
 
   .footer-contact p {
@@ -1031,8 +1103,17 @@ textarea:focus-visible {
 
   .site-footer {
     align-items: center;
-    flex-direction: column;
+    grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  .footer-utility {
+    grid-column: auto;
+    justify-self: center;
+    padding-top: 12px;
+    padding-left: 0;
+    border-top: 1px solid rgb(255 253 250 / 14%);
+    border-left: 0;
   }
 
   .footer-brand {
@@ -1042,6 +1123,10 @@ textarea:focus-visible {
 
   .footer-contact p {
     justify-content: center;
+  }
+
+  .sitemap-grid {
+    grid-template-columns: 1fr;
   }
 
   .brand {

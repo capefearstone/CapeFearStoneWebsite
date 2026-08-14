@@ -37,7 +37,8 @@ const routeDefinitions = [
   { path: "/about", output: "about/index.html" },
   { path: "/services", output: "services/index.html" },
   { path: "/portfolio", output: "portfolio/index.html" },
-  { path: "/contact", output: "contact/index.html" }
+  { path: "/contact", output: "contact/index.html" },
+  { path: "/sitemap", output: "sitemap/index.html" }
 ];
 
 function escapeAttribute(value) {

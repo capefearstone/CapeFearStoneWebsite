@@ -27,6 +27,11 @@ export const seoByPath = {
     description:
       "Contact Cape Fear Stone to discuss a paver patio, walkway, retaining wall, stone border, or custom hardscape project in the Cape Fear region."
   },
+  "/sitemap": {
+    title: "Sitemap | Cape Fear Stone",
+    description:
+      "Browse Cape Fear Stone pages, hardscaping services, project photos, company information, and contact details."
+  },
   "/404": {
     title: "Page Not Found | Cape Fear Stone",
     description: "The requested page could not be found. Return to Cape Fear Stone to explore our hardscaping services."
