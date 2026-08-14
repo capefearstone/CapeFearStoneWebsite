@@ -1,10 +1,11 @@
 export const siteUrl = "https://capefearstone.com";
+export const siteName = "Cape Fear Stone";
 
 export const seoByPath = {
   "/": {
     title: "Premier Custom Hardscapes in Wilmington, NC",
     description:
-      "Cape Fear Stone builds custom paver patios, walkways, retaining walls, and stone borders in Wilmington, Leland, and the Cape Fear region. Request a free quote."
+      "Cape Fear Stone specializes in custom stone borders, walkways, retaining walls, and paver patios in Wilmington, Leland, and the surrounding region. Request a free quote today!"
   },
   "/about": {
     title: "About Cape Fear Stone | Wilmington, NC Hardscaping",
@@ -47,7 +48,7 @@ export function localBusinessSchema(site, services) {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "@id": `${siteUrl}/#business`,
-    name: site.businessName,
+    name: siteName,
     url: `${siteUrl}/`,
     logo: `${siteUrl}/assets/cape-fear-stone-logo.png`,
     image: `${siteUrl}/assets/cape-fear-stone-logo.png`,

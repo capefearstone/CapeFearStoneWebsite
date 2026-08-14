@@ -3,7 +3,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { createSiteRenderer } from "../src/site-renderer.js";
-import { canonicalUrl, localBusinessSchema, seoByPath, siteUrl } from "../src/seo.js";
+import { canonicalUrl, localBusinessSchema, seoByPath, siteName, siteUrl } from "../src/seo.js";
 
 const root = dirname(fileURLToPath(import.meta.url));
 const projectRoot = join(root, "..");
@@ -60,7 +60,7 @@ function structuredData(path, metadata) {
         "@type": "WebSite",
         "@id": `${siteUrl}/#website`,
         url: `${siteUrl}/`,
-        name: site.businessName,
+        name: siteName,
         publisher: { "@id": `${siteUrl}/#business` }
       },
       {
@@ -93,12 +93,13 @@ function seoBlock(path, { noindex = false } = {}) {
     <link rel="icon" href="/favicon.ico" sizes="32x32" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="application-name" content="${escapeAttribute(siteName)}" />
     <meta name="description" content="${description}" />
     <meta name="robots" content="${robots}" />
     <link rel="canonical" href="${url}" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="${escapeAttribute(site.businessName)}" />
+    <meta property="og:site_name" content="${escapeAttribute(siteName)}" />
     <meta property="og:title" content="${title}" />
     <meta property="og:description" content="${description}" />
     <meta property="og:url" content="${url}" />
